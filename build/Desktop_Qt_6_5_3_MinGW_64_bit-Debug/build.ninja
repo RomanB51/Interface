@@ -73,9 +73,9 @@ build CMakeFiles/Interface.dir/mainwindow.cpp.obj: CXX_COMPILER__Interface_unsca
   OBJECT_DIR = CMakeFiles\Interface.dir
   OBJECT_FILE_DIR = CMakeFiles\Interface.dir
 
-build CMakeFiles/Interface.dir/dialogv2.cpp.obj: CXX_COMPILER__Interface_unscanned_Debug D$:/C++/QT$ creator/My_projectV1/Interface/dialogv2.cpp || cmake_object_order_depends_target_Interface
+build CMakeFiles/Interface.dir/new_window.cpp.obj: CXX_COMPILER__Interface_unscanned_Debug D$:/C++/QT$ creator/My_projectV1/Interface/new_window.cpp || cmake_object_order_depends_target_Interface
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\Interface.dir\dialogv2.cpp.obj.d
+  DEP_FILE = CMakeFiles\Interface.dir\new_window.cpp.obj.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -I"D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/include" -isystem D:/C++/tyh/6.5.3/mingw_64/include/QtCore -isystem D:/C++/tyh/6.5.3/mingw_64/include -isystem D:/C++/tyh/6.5.3/mingw_64/mkspecs/win32-g++ -isystem D:/C++/tyh/6.5.3/mingw_64/include/QtWidgets -isystem D:/C++/tyh/6.5.3/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\Interface.dir
@@ -89,7 +89,7 @@ build CMakeFiles/Interface.dir/dialogv2.cpp.obj: CXX_COMPILER__Interface_unscann
 #############################################
 # Link the executable Interface.exe
 
-build Interface.exe: CXX_EXECUTABLE_LINKER__Interface_Debug CMakeFiles/Interface.dir/Interface_autogen/mocs_compilation.cpp.obj CMakeFiles/Interface.dir/main.cpp.obj CMakeFiles/Interface.dir/mainwindow.cpp.obj CMakeFiles/Interface.dir/dialogv2.cpp.obj | D$:/C++/tyh/6.5.3/mingw_64/lib/libQt6Widgets.a D$:/C++/tyh/6.5.3/mingw_64/lib/libQt6Gui.a D$:/C++/tyh/6.5.3/mingw_64/lib/libQt6Core.a D$:/C++/tyh/6.5.3/mingw_64/lib/libQt6EntryPoint.a || Interface_autogen Interface_autogen_timestamp_deps
+build Interface.exe: CXX_EXECUTABLE_LINKER__Interface_Debug CMakeFiles/Interface.dir/Interface_autogen/mocs_compilation.cpp.obj CMakeFiles/Interface.dir/main.cpp.obj CMakeFiles/Interface.dir/mainwindow.cpp.obj CMakeFiles/Interface.dir/new_window.cpp.obj | D$:/C++/tyh/6.5.3/mingw_64/lib/libQt6Widgets.a D$:/C++/tyh/6.5.3/mingw_64/lib/libQt6Gui.a D$:/C++/tyh/6.5.3/mingw_64/lib/libQt6Core.a D$:/C++/tyh/6.5.3/mingw_64/lib/libQt6EntryPoint.a || Interface_autogen Interface_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = D:/C++/tyh/6.5.3/mingw_64/lib/libQt6Widgets.a  D:/C++/tyh/6.5.3/mingw_64/lib/libQt6Gui.a  D:/C++/tyh/6.5.3/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  D:/C++/tyh/6.5.3/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -176,7 +176,7 @@ build Interface_autogen_timestamp_deps: phony
 #############################################
 # Utility command for Interface_autogen
 
-build Interface_autogen: phony CMakeFiles/Interface_autogen Interface_autogen/include/ui_mainwindow.h Interface_autogen/include/ui_dialogv2.h Interface_autogen/timestamp Interface_autogen/mocs_compilation.cpp Interface_autogen_timestamp_deps
+build Interface_autogen: phony CMakeFiles/Interface_autogen Interface_autogen/include/ui_mainwindow.h Interface_autogen/include/ui_new_window.h Interface_autogen/timestamp Interface_autogen/mocs_compilation.cpp Interface_autogen_timestamp_deps
 
 
 #############################################
@@ -193,7 +193,7 @@ build Interface_autogen/timestamp Interface_autogen/mocs_compilation.cpp | ${cma
 #############################################
 # Phony custom command for CMakeFiles\Interface_autogen
 
-build CMakeFiles/Interface_autogen Interface_autogen/include/ui_mainwindow.h Interface_autogen/include/ui_dialogv2.h | ${cmake_ninja_workdir}CMakeFiles/Interface_autogen ${cmake_ninja_workdir}Interface_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}Interface_autogen/include/ui_dialogv2.h: phony Interface_autogen/timestamp || Interface_autogen_timestamp_deps
+build CMakeFiles/Interface_autogen Interface_autogen/include/ui_mainwindow.h Interface_autogen/include/ui_new_window.h | ${cmake_ninja_workdir}CMakeFiles/Interface_autogen ${cmake_ninja_workdir}Interface_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}Interface_autogen/include/ui_new_window.h: phony Interface_autogen/timestamp || Interface_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

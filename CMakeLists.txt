@@ -23,7 +23,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Interface
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        dialogv2.h dialogv2.cpp dialogv2.ui
+        new_window.h new_window.cpp new_window.ui
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Interface APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

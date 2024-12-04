@@ -1,9 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include"new_window.h"
 #include <QMainWindow>
-#include "dialogv2.h"
 QT_BEGIN_NAMESPACE
+
 namespace Ui {
 class MainWindow;
 }
@@ -18,10 +18,11 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
+
+    void on_pushButton_login_clicked();
 
 private:
     Ui::MainWindow *ui;
-    DialogV2 *new_window; //создали объект второго окна
+    New_window *new_window;
 };
 #endif // MAINWINDOW_H

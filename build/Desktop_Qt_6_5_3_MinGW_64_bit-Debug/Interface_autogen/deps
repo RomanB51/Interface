@@ -5,11 +5,11 @@ Interface_autogen/timestamp: \
 	D:/C++/QT\ creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake \
 	D:/C++/QT\ creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
 	D:/C++/QT\ creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/moc_predefs.h \
-	D:/C++/QT\ creator/My_projectV1/Interface/dialogv2.cpp \
-	D:/C++/QT\ creator/My_projectV1/Interface/dialogv2.h \
 	D:/C++/QT\ creator/My_projectV1/Interface/main.cpp \
 	D:/C++/QT\ creator/My_projectV1/Interface/mainwindow.cpp \
 	D:/C++/QT\ creator/My_projectV1/Interface/mainwindow.h \
+	D:/C++/QT\ creator/My_projectV1/Interface/new_window.cpp \
+	D:/C++/QT\ creator/My_projectV1/Interface/new_window.h \
 	D:/C++/tyh/6.5.3/mingw_64/include/QtCore/q20memory.h \
 	D:/C++/tyh/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
 	D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qalgorithms.h \
@@ -517,6 +517,6 @@ Interface_autogen/timestamp: \
 	D:/C++/tyh/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
 	D:/C++/tyh/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
 	D:/C++/tyh/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
-	D:/C++/QT\ creator/My_projectV1/Interface/dialogv2.ui \
 	D:/C++/QT\ creator/My_projectV1/Interface/mainwindow.ui \
+	D:/C++/QT\ creator/My_projectV1/Interface/new_window.ui \
 	D:/C++/tyh/Tools/CMake_64/bin/cmake.exe

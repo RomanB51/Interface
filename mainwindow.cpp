@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include<QMessageBox>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -14,10 +15,19 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_pushButton_login_clicked()
 {
-    new_window = new DialogV2(this); //аргумент this обозначает, что MainWindow является родительским объектом для new_window
-    new_window->show();             //и при закрытии MainWindow new_window тоже закроется, в противном случае new_window так
-                                        //и останется открытым
+    QString username = ui->lineEdit_username->text();
+    QString password = ui->lineEdit_password->text();
+
+    if(username == "test" && password == "test"){
+        QMessageBox::information(this, "Ввод пароля", "Вы успешно ввели пароль");
+        hide(); //скрывает main_window в данном случае окно ввода пароля
+        new_window = new New_window(this);
+        new_window->show();
+        show();
+    }
+    else
+        QMessageBox::warning(this, "Ошибка", "Вы неверно ввели пароль");
 }
 
