@@ -1,5 +1,6 @@
 D:/C++/QT\ creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/EWIEGA46WW/moc_mainwindow.cpp: D:/C++/QT\ creator/My_projectV1/Interface/mainwindow.h \
   D:/C++/QT\ creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/moc_predefs.h \
+  D:/C++/QT\ creator/My_projectV1/Interface/dialogv2.h \
   D:/C++/tyh/6.5.3/mingw_64/include/QtCore/q20memory.h \
   D:/C++/tyh/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
   D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qalgorithms.h \
@@ -133,7 +134,9 @@ D:/C++/QT\ creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-De
   D:/C++/tyh/6.5.3/mingw_64/include/QtGui/qtransform.h \
   D:/C++/tyh/6.5.3/mingw_64/include/QtGui/qwindowdefs.h \
   D:/C++/tyh/6.5.3/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/C++/tyh/6.5.3/mingw_64/include/QtWidgets/QDialog \
   D:/C++/tyh/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
+  D:/C++/tyh/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
   D:/C++/tyh/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h \
   D:/C++/tyh/6.5.3/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/C++/tyh/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h \

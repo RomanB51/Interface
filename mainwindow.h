@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include "dialogv2.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -22,5 +22,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    DialogV2 *new_window; //создали объект второго окна
 };
 #endif // MAINWINDOW_H
