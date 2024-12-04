@@ -37,6 +37,7 @@ public:
     QLabel *label_2;
     QLineEdit *lineEdit_password;
     QPushButton *pushButton_login;
+    QLabel *label_pic;
     QMenuBar *menubar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -48,7 +49,7 @@ public:
         centralwidget->setObjectName("centralwidget");
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName("groupBox");
-        groupBox->setGeometry(QRect(170, 60, 261, 151));
+        groupBox->setGeometry(QRect(260, 60, 261, 151));
         widget = new QWidget(groupBox);
         widget->setObjectName("widget");
         widget->setGeometry(QRect(10, 30, 228, 86));
@@ -90,6 +91,9 @@ public:
 
         verticalLayout->addWidget(pushButton_login);
 
+        label_pic = new QLabel(centralwidget);
+        label_pic->setObjectName("label_pic");
+        label_pic->setGeometry(QRect(80, 60, 161, 131));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -108,6 +112,7 @@ public:
         label->setText(QCoreApplication::translate("MainWindow", "\320\230\320\274\321\217 \320\277\320\276\320\273\321\214\320\267\320\276\320\262\320\260\321\202\320\265\320\273\321\217", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "\320\237\320\260\321\200\320\276\320\273\321\214", nullptr));
         pushButton_login->setText(QCoreApplication::translate("MainWindow", "\320\223\320\276\321\202\320\276\320\262\320\276", nullptr));
+        label_pic->setText(QString());
     } // retranslateUi
 
 };

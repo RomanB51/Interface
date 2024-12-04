@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include<QMessageBox>
+#include<QPixmap>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -8,6 +9,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    QPixmap pix("D:/C++/Password.jpg");
+    ui->label_pic->setPixmap(pix.scaled(ui->label_pic->width(), ui->label_pic->height(), Qt::KeepAspectRatio));
 }
 
 MainWindow::~MainWindow()
@@ -25,7 +28,6 @@ void MainWindow::on_pushButton_login_clicked()
         hide(); //скрывает main_window в данном случае окно ввода пароля
         new_window = new New_window(this);
         new_window->show();
-        show();
     }
     else
         QMessageBox::warning(this, "Ошибка", "Вы неверно ввели пароль");
