@@ -1,0 +1,62 @@
+# ninja log v6
+286	7561	7549358379672171	Interface_autogen/timestamp	e78ee49c6297cbba
+286	7561	7549358379672171	Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+286	7561	7549358379672171	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/timestamp	e78ee49c6297cbba
+286	7561	7549358379672171	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+7576	27831	7549358381878135	CMakeFiles/Interface.dir/Interface_autogen/mocs_compilation.cpp.obj	19f5373def4756ed
+7602	28189	7549358382128003	CMakeFiles/Interface.dir/mainwindow.cpp.obj	39982fa6c1f3a445
+7590	28481	7549358382007659	CMakeFiles/Interface.dir/main.cpp.obj	fb5c4d1679916e79
+28481	31425	7549358590924197	Interface.exe	747a4c1dedb809cd
+143	940	7549362104277240	Interface_autogen/timestamp	e78ee49c6297cbba
+143	940	7549362104277240	Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+143	940	7549362104277240	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/timestamp	e78ee49c6297cbba
+143	940	7549362104277240	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+941	11518	7549362112271430	CMakeFiles/Interface.dir/mainwindow.cpp.obj	39982fa6c1f3a445
+11518	12023	7549362218038685	Interface.exe	747a4c1dedb809cd
+378	2751	7549365153958634	Interface_autogen/timestamp	e78ee49c6297cbba
+378	2751	7549365153958634	Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+378	2751	7549365153958634	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/timestamp	e78ee49c6297cbba
+378	2751	7549365153958634	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+2769	23440	7549365156902369	CMakeFiles/Interface.dir/main.cpp.obj	fb5c4d1679916e79
+2753	23631	7549365156742373	CMakeFiles/Interface.dir/Interface_autogen/mocs_compilation.cpp.obj	19f5373def4756ed
+2782	23647	7549365157032045	CMakeFiles/Interface.dir/mainwindow.cpp.obj	39982fa6c1f3a445
+23647	26149	7549365365688191	Interface.exe	747a4c1dedb809cd
+4703	7968	7549942482898796	Interface_autogen/timestamp	e78ee49c6297cbba
+4703	7968	7549942482898796	Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+4703	7968	7549942482898796	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/timestamp	e78ee49c6297cbba
+4703	7968	7549942482898796	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+86	693	7549942820253105	Interface_autogen/timestamp	e78ee49c6297cbba
+86	693	7549942820253105	Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+86	693	7549942820253105	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/timestamp	e78ee49c6297cbba
+86	693	7549942820253105	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+695	14726	7549942826338458	CMakeFiles/Interface.dir/mainwindow.cpp.obj	39982fa6c1f3a445
+14746	18038	7549942966851392	Interface.exe	747a4c1dedb809cd
+253	893	7549949630325914	Interface_autogen/timestamp	e78ee49c6297cbba
+253	893	7549949630325914	Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+253	893	7549949630325914	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/timestamp	e78ee49c6297cbba
+253	893	7549949630325914	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+894	8212	7549949636741663	CMakeFiles/Interface.dir/mainwindow.cpp.obj	39982fa6c1f3a445
+8212	9647	7549949709916478	Interface.exe	747a4c1dedb809cd
+1241	2494	7549968208682251	Interface_autogen/timestamp	e78ee49c6297cbba
+1241	2494	7549968208682251	Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+1241	2494	7549968208682251	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/timestamp	e78ee49c6297cbba
+1241	2494	7549968208682251	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+2496	27154	7549968221235747	CMakeFiles/Interface.dir/main.cpp.obj	fb5c4d1679916e79
+2570	29147	7549968221975753	CMakeFiles/Interface.dir/mainwindow.cpp.obj	39982fa6c1f3a445
+29147	33606	7549968487744820	Interface.exe	747a4c1dedb809cd
+315	899	7549979367175739	Interface_autogen/timestamp	e78ee49c6297cbba
+315	899	7549979367175739	Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+315	899	7549979367175739	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/timestamp	e78ee49c6297cbba
+315	899	7549979367175739	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+901	7233	7549979373036217	CMakeFiles/Interface.dir/mainwindow.cpp.obj	39982fa6c1f3a445
+7233	9044	7549979436368030	Interface.exe	747a4c1dedb809cd
+29	500	7549982106052656	Interface_autogen/timestamp	e78ee49c6297cbba
+29	500	7549982106052656	Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+29	500	7549982106052656	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/timestamp	e78ee49c6297cbba
+29	500	7549982106052656	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+36	536	7549982514755248	Interface_autogen/timestamp	e78ee49c6297cbba
+36	536	7549982514755248	Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+36	536	7549982514755248	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/timestamp	e78ee49c6297cbba
+36	536	7549982514755248	D:/C++/QT creator/My_projectV1/Interface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Interface_autogen/mocs_compilation.cpp	e78ee49c6297cbba
+537	6479	7549982519768380	CMakeFiles/Interface.dir/mainwindow.cpp.obj	39982fa6c1f3a445
+6479	8004	7549982579181537	Interface.exe	747a4c1dedb809cd
