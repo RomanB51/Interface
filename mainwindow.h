@@ -1,9 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include"new_window.h"
-#include <QMainWindow>
-QT_BEGIN_NAMESPACE
 
+#include <QMainWindow>
+
+QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
 }
@@ -18,11 +18,11 @@ public:
     ~MainWindow();
 
 private slots:
+    void on_pushButton_clicked();
 
-    void on_pushButton_login_clicked();
+    void on_checkBox_stateChanged(int arg1);
 
 private:
     Ui::MainWindow *ui;
-    New_window *new_window;
 };
 #endif // MAINWINDOW_H
