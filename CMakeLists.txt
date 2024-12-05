@@ -24,6 +24,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         new_window.h new_window.cpp new_window.ui
+        resources.qrc
 
     )
 # Define target properties for Android with Qt 6 as:

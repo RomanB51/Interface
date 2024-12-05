@@ -244,7 +244,8 @@
 		"D:/C++/tyh/6.5.3/mingw_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets.cmake",
 		"D:/C++/tyh/6.5.3/mingw_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets-relwithdebinfo.cmake",
 		"D:/C++/tyh/6.5.3/mingw_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginAdditionalTargetInfo.cmake",
-		"D:/C++/tyh/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake"
+		"D:/C++/tyh/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
+		"D:/C++/QT creator/My_projectV1/Interface/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "D:/C++/QT creator/My_projectV1/Interface",
 	"CROSS_CONFIG" : false,

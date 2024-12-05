@@ -9,7 +9,12 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap pix("D:/C++/Password.jpg");
+    //QPixmap pix("D:/C++/Password.jpg"); неверный подход к размещению изображений, так как при перемещении
+    //программы на другой комп или линукс эта ссылка не сработает, так как изображения не будет на новом компе.
+    //Для того, что бы это поправить нужно создать файл Qt resources и добавить в него нужные изображения.
+    //Затем скопировать путь к этому изображению, кликнув в дереве проекта по нему правой кнопкой мыши. Внизу
+    //приведен верный способ установки изображений в приложении:
+    QPixmap pix(":/Image/Password.jpg");//ВОТ ЭТО ВЕРНЫЙ СПОСОБ ЗАДАНИЯ ИЗОБРАЖЕНИЙ
     ui->label_pic->setPixmap(pix.scaled(ui->label_pic->width(), ui->label_pic->height(), Qt::KeepAspectRatio));
 }
 
@@ -31,5 +36,6 @@ void MainWindow::on_pushButton_login_clicked()
     }
     else
         QMessageBox::warning(this, "Ошибка", "Вы неверно ввели пароль");
+
 }
 
