@@ -80,7 +80,7 @@ public:
 
         lineEdit_password = new QLineEdit(layoutWidget);
         lineEdit_password->setObjectName("lineEdit_password");
-        lineEdit_password->setEchoMode(QLineEdit::Password);
+        lineEdit_password->setEchoMode(QLineEdit::PasswordEchoOnEdit);
 
         horizontalLayout_2->addWidget(lineEdit_password);
 
