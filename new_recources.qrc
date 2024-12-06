@@ -1,7 +1,7 @@
 <RCC>
     <qresource prefix="/">
-        <file>C:/Users/Администратор/Pictures/Password.jpg</file>
-        <file>C:/Users/Администратор/Pictures/save.jpg</file>
-        <file>C:/Users/Администратор/Pictures/open.png</file>
+        <file>Picture/open.png</file>
+        <file>Picture/Password.jpg</file>
+        <file>Picture/save.jpg</file>
     </qresource>
 </RCC>

@@ -13,7 +13,32 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>40</y>
+      <width>101</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>110</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -30,19 +55,11 @@
     <addaction name="action"/>
     <addaction name="action_2"/>
    </widget>
-   <widget class="QMenu" name="menu_2">
-    <property name="title">
-     <string>Новый пункт</string>
-    </property>
-    <addaction name="action_5"/>
-   </widget>
    <addaction name="menu"/>
-   <addaction name="menu_2"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
   <action name="action">
    <property name="icon">
-    <iconset resource="new_recources.qrc">
+    <iconset>
      <normaloff>:/C:/Users/Администратор/Pictures/Password.jpg</normaloff>:/C:/Users/Администратор/Pictures/Password.jpg</iconset>
    </property>
    <property name="text">
@@ -51,7 +68,7 @@
   </action>
   <action name="action_2">
    <property name="icon">
-    <iconset resource="new_recources.qrc">
+    <iconset>
      <normaloff>:/C:/Users/Администратор/Pictures/open.png</normaloff>:/C:/Users/Администратор/Pictures/open.png</iconset>
    </property>
    <property name="text">
@@ -60,7 +77,7 @@
   </action>
   <action name="action_5">
    <property name="icon">
-    <iconset resource="new_recources.qrc">
+    <iconset>
      <normaloff>:/C:/Users/Администратор/Pictures/save.jpg</normaloff>:/C:/Users/Администратор/Pictures/save.jpg</iconset>
    </property>
    <property name="text">
@@ -68,8 +85,6 @@
    </property>
   </action>
  </widget>
- <resources>
-  <include location="new_recources.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

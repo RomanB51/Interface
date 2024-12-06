@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/pre"/>
+    <qresource prefix="/">
+        <file>C:/Users/Администратор/Pictures/open.png</file>
+    </qresource>
+</RCC>

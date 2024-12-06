@@ -12,9 +12,11 @@
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
@@ -27,10 +29,11 @@ public:
     QAction *action_2;
     QAction *action_5;
     QWidget *centralwidget;
+    QComboBox *comboBox;
+    QPushButton *pushButton;
+    QStatusBar *statusbar;
     QMenuBar *menubar;
     QMenu *menu;
-    QMenu *menu_2;
-    QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -54,24 +57,26 @@ public:
         action_5->setIcon(icon2);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        comboBox = new QComboBox(centralwidget);
+        comboBox->setObjectName("comboBox");
+        comboBox->setGeometry(QRect(60, 40, 101, 22));
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(130, 110, 75, 24));
         MainWindow->setCentralWidget(centralwidget);
+        statusbar = new QStatusBar(MainWindow);
+        statusbar->setObjectName("statusbar");
+        MainWindow->setStatusBar(statusbar);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
         menubar->setGeometry(QRect(0, 0, 629, 22));
         menu = new QMenu(menubar);
         menu->setObjectName("menu");
-        menu_2 = new QMenu(menubar);
-        menu_2->setObjectName("menu_2");
         MainWindow->setMenuBar(menubar);
-        statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName("statusbar");
-        MainWindow->setStatusBar(statusbar);
 
         menubar->addAction(menu->menuAction());
-        menubar->addAction(menu_2->menuAction());
         menu->addAction(action);
         menu->addAction(action_2);
-        menu_2->addAction(action_5);
 
         retranslateUi(MainWindow);
 
@@ -84,8 +89,8 @@ public:
         action->setText(QCoreApplication::translate("MainWindow", "\320\235\320\276\320\262\321\213\320\271 \321\204\320\260\320\271\320\273", nullptr));
         action_2->setText(QCoreApplication::translate("MainWindow", "\320\236\321\202\320\272\321\200\321\213\321\202\321\214 \321\204\320\260\320\271\320\273", nullptr));
         action_5->setText(QCoreApplication::translate("MainWindow", "\320\225\321\211\320\265 \320\276\320\264\320\270\320\275 \320\277\321\203\320\275\320\272\321\202", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         menu->setTitle(QCoreApplication::translate("MainWindow", "\320\237\320\270\321\210\320\270\321\202\320\265 \320\267\320\264\320\265\321\201\321\214", nullptr));
-        menu_2->setTitle(QCoreApplication::translate("MainWindow", "\320\235\320\276\320\262\321\213\320\271 \320\277\321\203\320\275\320\272\321\202", nullptr));
     } // retranslateUi
 
 };
