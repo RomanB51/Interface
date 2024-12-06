@@ -12,10 +12,8 @@
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
-#include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
@@ -30,20 +28,16 @@ public:
     QAction *action_2;
     QAction *action_5;
     QWidget *centralwidget;
-    QVBoxLayout *verticalLayout_2;
     QVBoxLayout *verticalLayout;
-    QPlainTextEdit *plainTextEdit;
-    QHBoxLayout *horizontalLayout;
     QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QStatusBar *statusbar;
     QMenuBar *menubar;
+    QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(384, 376);
+        MainWindow->resize(552, 293);
         action = new QAction(MainWindow);
         action->setObjectName("action");
         QIcon icon;
@@ -61,41 +55,21 @@ public:
         action_5->setIcon(icon2);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        verticalLayout_2 = new QVBoxLayout(centralwidget);
-        verticalLayout_2->setObjectName("verticalLayout_2");
-        verticalLayout = new QVBoxLayout();
+        verticalLayout = new QVBoxLayout(centralwidget);
         verticalLayout->setObjectName("verticalLayout");
-        plainTextEdit = new QPlainTextEdit(centralwidget);
-        plainTextEdit->setObjectName("plainTextEdit");
-
-        verticalLayout->addWidget(plainTextEdit);
-
-        horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName("horizontalLayout");
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName("pushButton");
 
-        horizontalLayout->addWidget(pushButton);
-
-        pushButton_2 = new QPushButton(centralwidget);
-        pushButton_2->setObjectName("pushButton_2");
-
-        horizontalLayout->addWidget(pushButton_2);
-
-
-        verticalLayout->addLayout(horizontalLayout);
-
-
-        verticalLayout_2->addLayout(verticalLayout);
+        verticalLayout->addWidget(pushButton);
 
         MainWindow->setCentralWidget(centralwidget);
-        statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName("statusbar");
-        MainWindow->setStatusBar(statusbar);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 384, 22));
+        menubar->setGeometry(QRect(0, 0, 552, 22));
         MainWindow->setMenuBar(menubar);
+        statusBar = new QStatusBar(MainWindow);
+        statusBar->setObjectName("statusBar");
+        MainWindow->setStatusBar(statusBar);
 
         retranslateUi(MainWindow);
 
@@ -108,8 +82,7 @@ public:
         action->setText(QCoreApplication::translate("MainWindow", "\320\235\320\276\320\262\321\213\320\271 \321\204\320\260\320\271\320\273", nullptr));
         action_2->setText(QCoreApplication::translate("MainWindow", "\320\236\321\202\320\272\321\200\321\213\321\202\321\214 \321\204\320\260\320\271\320\273", nullptr));
         action_5->setText(QCoreApplication::translate("MainWindow", "\320\225\321\211\320\265 \320\276\320\264\320\270\320\275 \320\277\321\203\320\275\320\272\321\202", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\277\320\270\321\201\320\260\321\202\321\214", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "\320\237\321\200\320\276\321\207\320\270\321\202\320\260\321\202\321\214", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "\320\236\321\202\320\272\321\200\321\213\321\202\321\214 \321\204\320\260\320\271\320\273", nullptr));
     } // retranslateUi
 
 };

@@ -1,8 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include <QMessageBox>
-#include<QFile>
-#include<QTextStream>
+#include<QFileDialog>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -18,39 +17,14 @@ MainWindow::~MainWindow()
 }
 
 
-
-
-
-
-void MainWindow::on_pushButton_clicked()//процесс записи внутрь файла
+void MainWindow::on_pushButton_clicked()
 {
-    QFile file("D:/C++/QT creator/text.txt");
-    if(!file.open(QFile::WriteOnly | QFile::Text)){ //Проверка на то, можем ли мы что-либо записывать
-        QMessageBox::warning(this, "Title", "Не удалось открыть файл");
-    }
+    QString filter = "All File (*.*) ;; Text File (*.txt) ;; XML File (*.xml)";
+    //фильтр который отображается выпадающим списком
+    //справа внизу в окне "Окно выбора файлов". ;; так положено разделять фильтры
+    QString filename = QFileDialog::getOpenFileName(this, "Окно выбора файлов", "С://", filter);
+    //получить путь и имя файла который мы открыли. По умолчанию будет открываться диск С.
 
-    QTextStream out(&file);
-    QString text = ui->plainTextEdit->toPlainText(); //вносим текст в переменную text
-    out << text;
-    //file.flush(); //принудительная очистка буфера, по идее он после вывода и сам автомтаически это делает
-                    //но может сделать это в непредсказуемый момент времени
-    out << "\nНовая строка;";
-    file.close(); //закрывает файл
-
-}
-
-
-void MainWindow::on_pushButton_2_clicked()//процесс считывания из файла
-{
-    QFile file("D:/C++/QT creator/text.txt");
-    if(!file.open(QFile::ReadOnly | QFile::Text)){ //Проверка на то, можем ли мы что-либо записывать
-        QMessageBox::warning(this, "Title", "Не удалось открыть файл");
-    }
-
-    QTextStream in(&file);
-    QString text = in.readAll();
-    ui->plainTextEdit->setPlainText(text);
-    in << text;
-    file.close();
+    QMessageBox::information(this, "Название файла", "Вы открыли файл:" + filename);
 }
 
