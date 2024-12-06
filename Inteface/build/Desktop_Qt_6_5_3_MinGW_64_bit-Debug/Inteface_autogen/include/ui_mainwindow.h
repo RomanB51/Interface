@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
@@ -30,6 +31,7 @@ public:
     QAction *action_5;
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout;
+    QComboBox *comboBox;
     QListWidget *listWidget;
     QPushButton *pushButton;
     QStatusBar *statusbar;
@@ -39,7 +41,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(629, 313);
+        MainWindow->resize(521, 313);
         action = new QAction(MainWindow);
         action->setObjectName("action");
         QIcon icon;
@@ -59,6 +61,11 @@ public:
         centralwidget->setObjectName("centralwidget");
         verticalLayout = new QVBoxLayout(centralwidget);
         verticalLayout->setObjectName("verticalLayout");
+        comboBox = new QComboBox(centralwidget);
+        comboBox->setObjectName("comboBox");
+
+        verticalLayout->addWidget(comboBox);
+
         listWidget = new QListWidget(centralwidget);
         listWidget->setObjectName("listWidget");
 
@@ -75,7 +82,7 @@ public:
         MainWindow->setStatusBar(statusbar);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 629, 22));
+        menubar->setGeometry(QRect(0, 0, 521, 22));
         MainWindow->setMenuBar(menubar);
 
         retranslateUi(MainWindow);

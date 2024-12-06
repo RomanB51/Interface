@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>629</width>
+    <width>521</width>
     <height>313</height>
    </rect>
   </property>
@@ -15,6 +15,9 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QComboBox" name="comboBox"/>
+    </item>
     <item>
      <widget class="QListWidget" name="listWidget"/>
     </item>
@@ -33,7 +36,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>629</width>
+     <width>521</width>
      <height>22</height>
     </rect>
    </property>
