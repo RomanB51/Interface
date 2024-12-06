@@ -7,13 +7,14 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    /*ui->comboBox->addItem(QIcon(":/Picture/open.png"), "Рома"); //создаем подпункты выпадающего меню с именем и иконками
-    ui->comboBox->addItem(QIcon(":/Picture/Password.jpg"), "Вика");
-    ui->comboBox->addItem(QIcon(":/Picture/save.jpg"), "Мама");*/
+    QListWidgetItem *item = new QListWidgetItem(QIcon(":/Picture/open.png"), "Рома"); //правильное создание элементов листа
+    ui->listWidget->addItem(item);
+    QListWidgetItem *item2 = new QListWidgetItem(QIcon(":/Picture/Password.jpg"), "Вика");
+    ui->listWidget->addItem(item2);
+    QListWidgetItem *item3 = new QListWidgetItem(QIcon(":/Picture/save.jpg"), "Мама");
+    ui->listWidget->addItem(item3);
 
-    for(int i = 0; i < 10; i++)
-        ui->comboBox->addItem(QIcon(":/Picture/save.jpg"), QString::number(i) + "Рома");//QString::number(i) преобразует в строку
-    ui->comboBox->insertItem(3,"new_text"); //заменяем 3 пункт comboBox на новый текст и без картинки
+    ui->listWidget->addItem("Рома"); //создание элемента листа, но без картинки - это так себе способ
 }
 
 MainWindow::~MainWindow()
@@ -21,13 +22,10 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-
-
-
 void MainWindow::on_pushButton_clicked()
 {
-    QMessageBox::information(this, "Тренировка3", QString::number(ui->comboBox->currentIndex()));//выводит индекс выбранной строки
-    QMessageBox::information(this, "Тренировка", ui->comboBox->currentText()); //Получение имени строки на которую мы кликнули
+    QMessageBox::information(this, "Заголовок", ui->listWidget->currentItem()->text());//получение текста элемента списка
+    ui->listWidget->currentItem()->setBackground(Qt::blue);//изменение цвета фона элемента текста
+    ui->listWidget->currentItem()->setForeground(Qt::white);//изменение цвета текста элемента
 }
 
