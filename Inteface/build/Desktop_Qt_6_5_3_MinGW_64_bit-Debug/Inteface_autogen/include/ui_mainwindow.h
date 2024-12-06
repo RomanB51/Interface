@@ -10,13 +10,12 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
-#include <QtWidgets/QPushButton>
-#include <QtWidgets/QRadioButton>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -24,69 +23,55 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
+    QAction *action;
+    QAction *action_2;
+    QAction *action_5;
     QWidget *centralwidget;
-    QPushButton *pushButton;
-    QWidget *widget;
-    QVBoxLayout *verticalLayout;
-    QRadioButton *radioButton_3;
-    QRadioButton *radioButton_4;
-    QWidget *widget1;
-    QVBoxLayout *verticalLayout_2;
-    QRadioButton *radioButton;
-    QRadioButton *radioButton_2;
     QMenuBar *menubar;
+    QMenu *menu;
+    QMenu *menu_2;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(800, 600);
+        MainWindow->resize(629, 338);
+        action = new QAction(MainWindow);
+        action->setObjectName("action");
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/C:/Users/\320\220\320\264\320\274\320\270\320\275\320\270\321\201\321\202\321\200\320\260\321\202\320\276\321\200/Pictures/Password.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        action->setIcon(icon);
+        action_2 = new QAction(MainWindow);
+        action_2->setObjectName("action_2");
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8(":/C:/Users/\320\220\320\264\320\274\320\270\320\275\320\270\321\201\321\202\321\200\320\260\321\202\320\276\321\200/Pictures/open.png"), QSize(), QIcon::Normal, QIcon::Off);
+        action_2->setIcon(icon1);
+        action_5 = new QAction(MainWindow);
+        action_5->setObjectName("action_5");
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8(":/C:/Users/\320\220\320\264\320\274\320\270\320\275\320\270\321\201\321\202\321\200\320\260\321\202\320\276\321\200/Pictures/save.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        action_5->setIcon(icon2);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(190, 240, 75, 24));
-        widget = new QWidget(centralwidget);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(50, 120, 65, 48));
-        verticalLayout = new QVBoxLayout(widget);
-        verticalLayout->setObjectName("verticalLayout");
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
-        radioButton_3 = new QRadioButton(widget);
-        radioButton_3->setObjectName("radioButton_3");
-
-        verticalLayout->addWidget(radioButton_3);
-
-        radioButton_4 = new QRadioButton(widget);
-        radioButton_4->setObjectName("radioButton_4");
-
-        verticalLayout->addWidget(radioButton_4);
-
-        widget1 = new QWidget(centralwidget);
-        widget1->setObjectName("widget1");
-        widget1->setGeometry(QRect(60, 30, 54, 48));
-        verticalLayout_2 = new QVBoxLayout(widget1);
-        verticalLayout_2->setObjectName("verticalLayout_2");
-        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        radioButton = new QRadioButton(widget1);
-        radioButton->setObjectName("radioButton");
-
-        verticalLayout_2->addWidget(radioButton);
-
-        radioButton_2 = new QRadioButton(widget1);
-        radioButton_2->setObjectName("radioButton_2");
-
-        verticalLayout_2->addWidget(radioButton_2);
-
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 800, 22));
+        menubar->setGeometry(QRect(0, 0, 629, 22));
+        menu = new QMenu(menubar);
+        menu->setObjectName("menu");
+        menu_2 = new QMenu(menubar);
+        menu_2->setObjectName("menu_2");
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
         MainWindow->setStatusBar(statusbar);
+
+        menubar->addAction(menu->menuAction());
+        menubar->addAction(menu_2->menuAction());
+        menu->addAction(action);
+        menu->addAction(action_2);
+        menu_2->addAction(action_5);
 
         retranslateUi(MainWindow);
 
@@ -96,11 +81,11 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "\320\237\321\200\320\276\320\262\320\265\321\200\320\272\320\260", nullptr));
-        radioButton_3->setText(QCoreApplication::translate("MainWindow", "\320\232\320\276\321\210\320\272\320\260", nullptr));
-        radioButton_4->setText(QCoreApplication::translate("MainWindow", "\320\241\320\276\320\261\320\260\320\272\320\260", nullptr));
-        radioButton->setText(QCoreApplication::translate("MainWindow", "\320\240\320\276\320\274\320\260", nullptr));
-        radioButton_2->setText(QCoreApplication::translate("MainWindow", "\320\222\320\270\320\272\320\260", nullptr));
+        action->setText(QCoreApplication::translate("MainWindow", "\320\235\320\276\320\262\321\213\320\271 \321\204\320\260\320\271\320\273", nullptr));
+        action_2->setText(QCoreApplication::translate("MainWindow", "\320\236\321\202\320\272\321\200\321\213\321\202\321\214 \321\204\320\260\320\271\320\273", nullptr));
+        action_5->setText(QCoreApplication::translate("MainWindow", "\320\225\321\211\320\265 \320\276\320\264\320\270\320\275 \320\277\321\203\320\275\320\272\321\202", nullptr));
+        menu->setTitle(QCoreApplication::translate("MainWindow", "\320\237\320\270\321\210\320\270\321\202\320\265 \320\267\320\264\320\265\321\201\321\214", nullptr));
+        menu_2->setTitle(QCoreApplication::translate("MainWindow", "\320\235\320\276\320\262\321\213\320\271 \320\277\321\203\320\275\320\272\321\202", nullptr));
     } // retranslateUi
 
 };

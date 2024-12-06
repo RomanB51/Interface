@@ -342,6 +342,6 @@ D:/C++/QT creator/My_projectV1/Interface/mainwindow.h
  mdp:D:/C++/tyh/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h
  mdp:D:/C++/tyh/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:D:/C++/tyh/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
-D:/C++/QT creator/My_projectV1/Interface/main.cpp
 D:/C++/QT creator/My_projectV1/Interface/mainwindow.cpp
  uic:./ui_mainwindow.h
+D:/C++/QT creator/My_projectV1/Interface/main.cpp
