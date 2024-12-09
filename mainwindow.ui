@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>656</width>
-    <height>361</height>
+    <width>608</width>
+    <height>381</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,7 +16,53 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QTextEdit" name="textEdit"/>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="tabPosition">
+       <enum>QTabWidget::West</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Triangular</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="icon">
+        <iconset resource="new_recources.qrc">
+         <normaloff>:/Picture/Password.jpg</normaloff>:/Picture/Password.jpg</iconset>
+       </attribute>
+       <attribute name="title">
+        <string notr="true">Домой</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>Текст высплывающей подсказки</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>Добавить вкладку</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -25,7 +71,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>656</width>
+     <width>608</width>
      <height>22</height>
     </rect>
    </property>
@@ -36,6 +82,7 @@
    </widget>
    <addaction name="menu"/>
   </widget>
+  <widget class="QStatusBar" name="statusBar"/>
   <action name="action">
    <property name="icon">
     <iconset>
@@ -64,6 +111,8 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="new_recources.qrc"/>
+ </resources>
  <connections/>
 </ui>

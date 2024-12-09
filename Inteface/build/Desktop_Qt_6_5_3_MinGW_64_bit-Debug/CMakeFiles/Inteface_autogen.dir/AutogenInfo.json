@@ -254,6 +254,12 @@
 	"HEADERS" : 
 	[
 		[
+			"D:/C++/QT creator/My_projectV1/Interface/form.h",
+			"MU",
+			"EWIEGA46WW/moc_form.cpp",
+			null
+		],
+		[
 			"D:/C++/QT creator/My_projectV1/Interface/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -330,6 +336,7 @@
 	"SETTINGS_FILE" : "D:/C++/QT creator/My_projectV1/Interface/Inteface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/Inteface_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "D:/C++/QT creator/My_projectV1/Interface/form.cpp", "MU", null ],
 		[ "D:/C++/QT creator/My_projectV1/Interface/main.cpp", "MU", null ],
 		[ "D:/C++/QT creator/My_projectV1/Interface/mainwindow.cpp", "MU", null ]
 	],

@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QTimer>
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -18,10 +18,14 @@ public:
     ~MainWindow();
 
 public slots:
-    void my_function();
+
+
+private slots:
+    void on_tabWidget_tabCloseRequested(int index);
+
+    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
-    QTimer *my_timer;
 };
 #endif // MAINWINDOW_H

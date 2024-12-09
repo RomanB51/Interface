@@ -1,4 +1,4 @@
-D:/C++/QT\ creator/My_projectV1/Interface/Inteface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Inteface_autogen/EWIEGA46WW/moc_mainwindow.cpp: D:/C++/QT\ creator/My_projectV1/Interface/mainwindow.h \
+D:/C++/QT\ creator/My_projectV1/Interface/Inteface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Inteface_autogen/EWIEGA46WW/moc_form.cpp: D:/C++/QT\ creator/My_projectV1/Interface/form.h \
   D:/C++/QT\ creator/My_projectV1/Interface/Inteface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Inteface_autogen/moc_predefs.h \
   D:/C++/tyh/6.5.3/mingw_64/include/QtCore/q20memory.h \
   D:/C++/tyh/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -133,10 +133,8 @@ D:/C++/QT\ creator/My_projectV1/Interface/Inteface/build/Desktop_Qt_6_5_3_MinGW_
   D:/C++/tyh/6.5.3/mingw_64/include/QtGui/qtransform.h \
   D:/C++/tyh/6.5.3/mingw_64/include/QtGui/qwindowdefs.h \
   D:/C++/tyh/6.5.3/mingw_64/include/QtGui/qwindowdefs_win.h \
-  D:/C++/tyh/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
-  D:/C++/tyh/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h \
+  D:/C++/tyh/6.5.3/mingw_64/include/QtWidgets/QWidget \
   D:/C++/tyh/6.5.3/mingw_64/include/QtWidgets/qsizepolicy.h \
-  D:/C++/tyh/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h \
   D:/C++/tyh/6.5.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/C++/tyh/6.5.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/C++/tyh/6.5.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
