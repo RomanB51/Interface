@@ -12,9 +12,10 @@
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -27,11 +28,10 @@ public:
     QAction *action_2;
     QAction *action_5;
     QWidget *centralwidget;
-    QWidget *widget;
     QVBoxLayout *verticalLayout;
-    QLabel *label_2;
-    QLabel *label;
+    QTextEdit *textEdit;
     QMenuBar *menubar;
+    QMenu *menu;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -55,38 +55,22 @@ public:
         action_5->setIcon(icon2);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        widget = new QWidget(centralwidget);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(120, 10, 411, 251));
-        verticalLayout = new QVBoxLayout(widget);
+        verticalLayout = new QVBoxLayout(centralwidget);
         verticalLayout->setObjectName("verticalLayout");
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
-        label_2 = new QLabel(widget);
-        label_2->setObjectName("label_2");
-        QFont font;
-        font.setPointSize(21);
-        font.setBold(true);
-        label_2->setFont(font);
-        label_2->setAlignment(Qt::AlignCenter);
+        textEdit = new QTextEdit(centralwidget);
+        textEdit->setObjectName("textEdit");
 
-        verticalLayout->addWidget(label_2);
-
-        label = new QLabel(widget);
-        label->setObjectName("label");
-        QFont font1;
-        font1.setPointSize(37);
-        font1.setBold(true);
-        label->setFont(font1);
-        label->setLayoutDirection(Qt::LeftToRight);
-        label->setAlignment(Qt::AlignCenter);
-
-        verticalLayout->addWidget(label);
+        verticalLayout->addWidget(textEdit);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
         menubar->setGeometry(QRect(0, 0, 656, 22));
+        menu = new QMenu(menubar);
+        menu->setObjectName("menu");
         MainWindow->setMenuBar(menubar);
+
+        menubar->addAction(menu->menuAction());
 
         retranslateUi(MainWindow);
 
@@ -99,8 +83,7 @@ public:
         action->setText(QCoreApplication::translate("MainWindow", "\320\235\320\276\320\262\321\213\320\271 \321\204\320\260\320\271\320\273", nullptr));
         action_2->setText(QCoreApplication::translate("MainWindow", "\320\236\321\202\320\272\321\200\321\213\321\202\321\214 \321\204\320\260\320\271\320\273", nullptr));
         action_5->setText(QCoreApplication::translate("MainWindow", "\320\225\321\211\320\265 \320\276\320\264\320\270\320\275 \320\277\321\203\320\275\320\272\321\202", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        menu->setTitle(QCoreApplication::translate("MainWindow", "\320\244\320\260\320\271\320\273", nullptr));
     } // retranslateUi
 
 };
