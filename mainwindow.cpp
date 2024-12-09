@@ -1,13 +1,15 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-#include <QMessageBox>
-#include<QFileDialog>
+#include <QDateTime>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    my_timer = new QTimer(this);
+    connect(my_timer, SIGNAL(timeout()), this, SLOT(my_function()));
+    my_timer->start(1000);
 
 }
 
@@ -16,15 +18,17 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-void MainWindow::on_pushButton_clicked()
+void MainWindow::my_function()
 {
-    QString filter = "All File (*.*) ;; Text File (*.txt) ;; XML File (*.xml)";
-    //фильтр который отображается выпадающим списком
-    //справа внизу в окне "Окно выбора файлов". ;; так положено разделять фильтры
-    QString filename = QFileDialog::getOpenFileName(this, "Окно выбора файлов", "С://", filter);
-    //получить путь и имя файла который мы открыли. По умолчанию будет открываться диск С.
-
-    QMessageBox::information(this, "Название файла", "Вы открыли файл:" + filename);
+    QTime time = QTime::currentTime();
+    QDate date = QDate::currentDate();
+    QString string_time = time.toString("hh : mm : ss");
+    QString string_date = date.toString("dd.MM.yyyy");
+    if(time.second()%2 == 0){
+        string_time[3] = ' ';
+        string_time[8] = ' ';
+    }
+    ui->label->setText(string_time);
+    ui->label_2->setText(string_date);
 }
 

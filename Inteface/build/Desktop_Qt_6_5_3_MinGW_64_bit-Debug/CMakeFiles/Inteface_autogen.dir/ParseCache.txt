@@ -3,6 +3,7 @@ D:/C++/QT creator/My_projectV1/Interface/mainwindow.h
  mmc:Q_OBJECT
  mdp:D:/C++/QT creator/My_projectV1/Interface/Inteface/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Inteface_autogen/moc_predefs.h
  mdp:D:/C++/QT creator/My_projectV1/Interface/mainwindow.h
+ mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/QTimer
  mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/q20memory.h
  mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/q20type_traits.h
  mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qalgorithms.h
@@ -14,6 +15,7 @@ D:/C++/QT creator/My_projectV1/Interface/mainwindow.h
  mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qatomic.h
  mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qatomic_cxx11.h
  mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qbasicatomic.h
+ mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qbasictimer.h
  mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qbindingstorage.h
  mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qbytearray.h
  mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h
@@ -96,6 +98,7 @@ D:/C++/QT creator/My_projectV1/Interface/mainwindow.h
  mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qtdeprecationmarkers.h
  mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qtenvironmentvariables.h
  mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qtextstream.h
+ mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qtimer.h
  mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qtmetamacros.h
  mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qtnoop.h
  mdp:D:/C++/tyh/6.5.3/mingw_64/include/QtCore/qtpreprocessorsupport.h
@@ -342,6 +345,6 @@ D:/C++/QT creator/My_projectV1/Interface/mainwindow.h
  mdp:D:/C++/tyh/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h
  mdp:D:/C++/tyh/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:D:/C++/tyh/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
-D:/C++/QT creator/My_projectV1/Interface/main.cpp
 D:/C++/QT creator/My_projectV1/Interface/mainwindow.cpp
  uic:./ui_mainwindow.h
+D:/C++/QT creator/My_projectV1/Interface/main.cpp
